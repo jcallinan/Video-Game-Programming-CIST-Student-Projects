@@ -1,0 +1,12 @@
+{
+"companyName": "frto027",
+"productName": "BallanceDemo2",
+"dataUrl": "2019Balance.data.unityweb",
+"wasmCodeUrl": "2019Balance.wasm.code.unityweb",
+"wasmFrameworkUrl": "2019Balance.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

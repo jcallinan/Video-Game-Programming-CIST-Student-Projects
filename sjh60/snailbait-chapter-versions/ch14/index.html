@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+   <!-- Head.........................................................-->
+
+	<head>
+	   <title>Snail Bait</title>
+     <link rel='stylesheet' href='snailbait.css'>
+     <link rel="icon" href="../favicon.ico">
+   </head>
+
+   <!-- Body.........................................................-->
+
+   <body>
+      <!-- Music.....................................................--> 
+
+      <audio id='snailbait-music' preload='auto'>
+        <source src='../sounds/music.ogg' type='audio/ogg'>
+        <source src='../sounds/music.mp3' type='audio/mp3'>
+      </audio>
+      
+      <!-- Sound effects..............................................-->
+      
+      <audio id='snailbait-audio-sprites' preload='auto'>
+        <source src='../sounds/audio-sprites.ogg' type='audio/ogg'>
+        <source src='../sounds/audio-sprites.mp3' type='audio/mp3'>
+      </audio>
+      
+      <!-- Arena.....................................................-->
+
+      <div id='snailbait-arena'>
+         <!-- Lives indicator........................................-->
+
+         <div id='snailbait-lives'>
+            <img id='snailbait-life-icon-left'   
+                 src='../images/runner-small.png'/>
+                 
+            <img id='snailbait-life-icon-middle' 
+                 src='../images/runner-small.png'/>
+
+            <img id='snailbait-life-icon-right'  
+                 src='../images/runner-small.png'/>
+         </div>
+
+         <!-- Score .................................................-->
+
+         <div id='snailbait-fps'></div>
+
+         <!-- Toast..................................................-->
+
+         <div id='snailbait-toast'></div>
+
+         <!-- Loading screen........................................-->
+
+         <div id='snailbait-loading'>
+            <div id='snailbait-loading-title'>Loading...</div>
+            <img id='snailbait-loading-animated-gif'/> <!-- no src attribute -->
+         </div>
+            
+         <!-- The game canvas........................................-->
+
+         <canvas id='snailbait-game-canvas' width='800' height='400'>
+            Your browser does not support HTML5 Canvas.
+         </canvas>
+
+         <!-- The ruler canvas for the developer backdoor.........-->
+
+         <canvas id='snailbait-ruler-canvas' 
+                 width='800' height='20'>
+            Your browser does not support HTML5 Canvas.
+         </canvas>
+
+         <!-- Sound and music.....................................-->
+
+         <div id='snailbait-sound-and-music'>
+            <div id='snailbait-sound-checkbox-div' class='snailbait-checkbox-div'>
+               Sound <input id='snailbait-sound-checkbox' 
+                            type='checkbox' checked />
+            </div>
+          
+            <div class='snailbait-checkbox-div'>
+               Music <input id='snailbait-music-checkbox' 
+                            type='checkbox' checked G/>
+            </div>
+         </div>
+
+         <!-- Instructions........................................-->
+
+         <div id='snailbait-instructions'>
+            <div class='snailbait-keys'>
+               &larr; / d 
+               <div class='snailbait-explanation'>move left</div>
+               &rarr; / k
+               <div class='snailbait-explanation'>move right</div>
+            </div>
+
+            <div class='snailbait-keys'>
+               j <div class='snailbait-explanation'>jump</div>
+            </div>
+
+            <div class='snailbait-keys'>
+               p <div class='snailbait-explanation'>pause</div>
+            </div>
+         </div>
+
+         <!-- Copyright...........................................-->
+         
+         <div id='snailbait-copyright'> &copy; 2012 David Geary</div>
+      </div>
+
+      <!-- JavaScript................................................-->
+
+      <script 
+         src='http://corehtml5canvas.com:98/socket.io/socket.io.js'>
+      </script>
+
+      <script src='../js/requestNextAnimationFrame.js'></script>
+      <script src='../js/sprites.js'></script>
+      <script src='../js/behaviors/cellSwitch.js'></script>
+      <script src='../js/behaviors/bounce.js'></script>
+      <script src='../js/behaviors/cycle.js'></script>
+      <script src='../js/behaviors/pulse.js'></script>
+      <script src='../js/stopwatch.js'></script>
+      <script src='../js/animationTimer.js'></script>
+      <script src='../js/timeSystem.js'></script>
+      <script src='../js/slider.js'></script>
+      <script src='snailbait.js'></script>
+  </body>
+</html>

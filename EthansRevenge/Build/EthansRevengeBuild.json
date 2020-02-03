@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Actual Game Project",
+"dataUrl": "EthansRevengeBuild.data.unityweb",
+"asmCodeUrl": "EthansRevengeBuild.asm.code.unityweb",
+"asmMemoryUrl": "EthansRevengeBuild.asm.memory.unityweb",
+"asmFrameworkUrl": "EthansRevengeBuild.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
