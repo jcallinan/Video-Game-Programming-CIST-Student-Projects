@@ -235,5 +235,6 @@ playing music and sound effects in their games. </p>
 <p><a href="http://jquery.com/" target="_blank">http://jquery.com/</a></p>
 <p><a href="/VirtualReality/">Check out our Virtual Reality games, apps &amp; experiences here</a></p>
 <p>
-PS part of https://archiveprogram.github.com/ 02/02/2020
+PS part of https://archiveprogram.github.com/ 02/02/2020 12:00AM 2/3/2020 Eastern Standard Time, Bradford PA 16701
+lat: 41.8947072 long: -78.60060159999999
 </p>
